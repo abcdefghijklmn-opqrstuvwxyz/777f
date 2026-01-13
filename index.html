@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 欢迎页 -->
+    <div class="welcome-page" id="welcomePage">
+        <div class="welcome-card">
+            <input type="text" class="password-input" id="passwordInput" placeholder="请输入密码">
+            <button class="login-btn" onclick="tryLogin()">登录</button>
+        </div>
+    </div>
+
+    <!-- 主界面 -->
+    <div class="main-app" id="mainApp">
+        <div id="tsparticles"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" data-module="home" onclick="loadModule('home', event)">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-module="tool" onclick="loadModule('tool', event)">工具</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-module="docs" onclick="loadModule('docs', event)">文档</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-module="links" onclick="loadModule('links', event)">友情链接</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content-wrapper">
+            <iframe id="contentFrame" src="home/index.html"></iframe>
+        </div>
+    </div>
+
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="libs/tsparticles.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
