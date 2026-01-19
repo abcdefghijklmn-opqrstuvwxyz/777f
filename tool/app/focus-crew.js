@@ -313,7 +313,6 @@ function doHighlight() {
                     
                     if (name && focusData[name]) {
                         const categories = focusData[name];
-                        
                         const uniqueCategories = Array.from(new Set(categories));
                         
                         uniqueCategories.sort((a, b) => {
