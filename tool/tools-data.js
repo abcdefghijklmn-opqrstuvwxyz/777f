@@ -22,7 +22,8 @@ const tools = [
         category: 'operation',
         categoryName: '运行',
         items: [
-            { name: '航线班次统计', desc: '根据排班表统计每人各航线班次', url: 'app/crew-flight-stats.html' }
+            { name: '航线班次统计', desc: '根据排班表统计每人各航线班次', url: 'app/crew-flight-stats.html' },
+            { name: '重点人员标注', desc: '根据重点人员表对审班表进行颜色标注，支持多类别标记', url: 'app/focus-crew.html' }
         ]
     },
     {
