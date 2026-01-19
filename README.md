@@ -1,1 +1,1 @@
-https://blueberry-api.github.io/777f/
+https://abcdefghijklmn-opqrstuvwxyz.github.io/777f/
