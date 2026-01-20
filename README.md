@@ -1,1 +1,1 @@
-https://banana-api.github.io/777f/
+https://xyz-api.github.io/777f/
