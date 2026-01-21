@@ -47,41 +47,6 @@ function enterApp() {
     
     welcome.style.display = 'none';
     main.classList.add('visible');
-    
-    // 初始化粒子效果
-    initParticles();
-}
-
-function initParticles() {
-    tsParticles.load("tsparticles", {
-        particles: {
-            number: { value: 80 },
-            color: { value: "#ffffff" },
-            opacity: { value: 0.6 },
-            size: { 
-                value: { min: 1, max: 4 }
-            },
-            move: {
-                enable: true,
-                speed: 1,
-                direction: "bottom",
-                straight: false,
-                outModes: { default: "out" }
-            },
-            wobble: {
-                enable: true,
-                distance: 10,
-                speed: 5
-            }
-        },
-        interactivity: {
-            events: {
-                onHover: { enable: false },
-                onClick: { enable: false }
-            }
-        },
-        detectRetina: true
-    });
 }
 
 function loadModule(name, event) {
