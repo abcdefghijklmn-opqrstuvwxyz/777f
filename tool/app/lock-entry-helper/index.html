@@ -25,13 +25,21 @@
                 <h5 class="card-title border-bottom pb-2 mb-3">工具介绍</h5>
                 <p>这是一个 Python 脚本工具，用于自动化填写飞行门户的非生产任务录入表单，支持批量录入锁班信息。</p>
                 <p class="mt-2">支持批量/手动模式、白名单过滤、冲突检测等功能。</p>
+                <div class="alert alert-info mt-3 mb-0">
+                    <strong>两个版本说明：</strong>
+                    <ul class="mb-0 mt-2">
+                        <li><strong>app.py</strong> - 标准版：遇到冲突或错误时会暂停，等待用户选择跳过(s)、重试(r)或返回(b)</li>
+                        <li><strong>app2.py</strong> - 静默版：遇到冲突或错误时自动跳过并记录，不暂停，最后统一输出错误报告</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="card mb-4">
             <div class="card-body">
                 <h5 class="card-title border-bottom pb-2 mb-3">下载</h5>
-                <a href="app.py" download class="btn btn-outline-secondary">下载 app.py</a>
+                <a href="app.py" download class="btn btn-outline-secondary me-2">下载 app.py（标准版）</a>
+                <a href="app2.py" download class="btn btn-outline-secondary">下载 app2.py（静默版）</a>
             </div>
         </div>
 
