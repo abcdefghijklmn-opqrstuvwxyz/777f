@@ -458,7 +458,6 @@ def batch_mode(page, whitelist):
                 print(c_err(f"失败: {e}"))
                 failed_records.append((record, str(e)))
                 i += 1
-            i += 1
         print(c_ok("批量处理完成"))
         print_failed_records(failed_records)
         return
@@ -570,7 +569,6 @@ def excel_mode(page, whitelist):
                 print(c_err(f"失败: {e}"))
                 failed_records.append((record, str(e)))
                 i += 1
-            i += 1
         print(c_ok("Excel导入完成"))
         print_failed_records(failed_records)
         return
